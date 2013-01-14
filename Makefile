@@ -4,9 +4,13 @@ all: install
 
 clean:
 	mvn -f deployment/pom.xml clean
+	mvn -f TDH-Research-Data-Catalogue.git/pom.xml clean
 
 install: clean
 	mvn -f deployment/pom.xml install
 
 compile: clean
 	mvn -f deployment/pom.xml compile
+
+deploy:
+	deployment/bin/deploy.sh
