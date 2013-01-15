@@ -8,6 +8,8 @@ SCRIPT_DIR=$(cd  $(dirname $0) ; pwd -P)
 
 INSTITUTIONAL_BUILD_DIR=$1
 
+echo "Instutional Build Directory: $INSTITUTIONAL_BUILD_DIR"
+
 if [ ! -a "$SETTINGS" ]
 then
     echo "Creating ReDBoX Deployment Settings..."
