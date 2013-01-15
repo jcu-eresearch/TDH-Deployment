@@ -1,7 +1,5 @@
 SHELL:=/bin/bash
 
-PROJECTS=$(shell ls | grep git )
-
 all: install
 
 clean:
