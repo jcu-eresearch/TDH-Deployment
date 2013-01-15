@@ -6,7 +6,7 @@
      />
   <default revision="master"
      remote="jcu-redbox"
-     sync-j="4" />
+     sync-j="1" />
 
 
 
