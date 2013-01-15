@@ -6,13 +6,14 @@ SETTINGS=$SETTINGS_DIR/$SETTINGS_NAME
 
 SCRIPT_DIR=$(cd  $(dirname $0) ; pwd -P)
 
-if [ -e "$SETTINGS" ]
+if [ ! -a "$SETTINGS" ]
 then
+    echo "Creating ReDBoX Deployment Settings..."
     mkdir -p $SETTINGS_DIR
     cp $SCRIPT_DIR/$SETTINGS_NAME $SETTINGS
 fi
 
+echo "Settings Directory: $SETTINGS"
 source $SETTINGS
-
 echo "Project Directory: $PROJECT_HOME"
 
