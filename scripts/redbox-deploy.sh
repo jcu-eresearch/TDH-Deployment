@@ -13,6 +13,7 @@ if [ $? -eq 0 ]
 then
     pushd  $INSTITUTIONAL_BUILD_DIR
     mvn -Dproject.home=$PROJECT_HOME package
+    popd
 else
     echo "An Error occoured..."
 fi
