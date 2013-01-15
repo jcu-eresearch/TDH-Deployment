@@ -1,3 +1,9 @@
+
+if [ ! -z $REDBOX_DEPLOY_SETUP_DONE ]
+then
+    exit 0
+fi
+
 SETTINGS_DIR=~/.tdh-deploy-settings
 SETTINGS_NAME=redbox-settings.sh
 SETTINGS=$SETTINGS_DIR/$SETTINGS_NAME
@@ -23,4 +29,4 @@ then
     echo "PROJECT_HOME variable not set"
     exit 2
 fi
-
+REDBOX_DEPLOY_SETUP_DONE=1
