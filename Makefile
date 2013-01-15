@@ -13,4 +13,4 @@ compile: clean
 	mvn -f deployment/pom.xml compile
 
 deploy:
-	deployment/scripts/redbox-deploy.sh $(cd TDH-Research-Data-Catalogue.git; pwd)
+	deployment/scripts/redbox-deploy.sh $(shell cd TDH-Research-Data-Catalogue.git; pwd)
