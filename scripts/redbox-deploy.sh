@@ -11,11 +11,9 @@ $SCRIPT_DIR/redbox-shutdown.sh && $SCRIPT_DIR/redbox-clean.sh
 
 if [ $? -eq 0 ]
 then
-
-    echo "Yeah"
+    pushd  $INSTITUTIONAL_BUILD_DIR
+    mvn -Dproject.home=$PROJECT_HOME package
 else
-    echo "No"
+    echo "An Error occoured..."
 fi
-#pushd  $INSTITUTIONAL_BUILD_DIR
-#mvn -Dproject.home=$PROJECT_HOME package
 
