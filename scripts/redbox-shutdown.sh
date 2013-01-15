@@ -1,7 +1,7 @@
 #!/bin/sh
 
 SCRIPT_DIR=$(cd  $(dirname $0) ; pwd -P)
-source $SCRIPT_DIR/setup.sh
+source $SCRIPT_DIR/redbox-setup.sh
 
 if [ -a  $PROJECT_HOME ]
 then

@@ -1,7 +1,11 @@
 #!/bin/sh
 
 SCRIPT_DIR=$(cd  $(dirname $0) ; pwd -P)
-source $SCRIPT_DIR/setup.sh
+source $SCRIPT_DIR/redbox-setup.sh
+
+INSTITUTIONAL_BUILD_DIR=$1
+
+echo "Instutional Build Directory: $INSTITUTIONAL_BUILD_DIR"
 
 $SCRIPT_DIR/redbox-shutdown.sh && $SCRIPT_DIR/redbox-clean.sh
 

@@ -1,16 +1,12 @@
 
-if [ ! -z $REDBOX_DEPLOY_SETUP_DONE ]
+if [ -z $REDBOX_DEPLOY_SETUP_DONE ]
 then
-    exit 0
+    exit 1
 fi
 
 SETTINGS_DIR=~/.tdh-deploy-settings
 SETTINGS_NAME=redbox-settings.sh
 SETTINGS=$SETTINGS_DIR/$SETTINGS_NAME
-
-INSTITUTIONAL_BUILD_DIR=$1
-
-echo "Instutional Build Directory: $INSTITUTIONAL_BUILD_DIR"
 
 if [ ! -e "$SETTINGS" ]
 then
