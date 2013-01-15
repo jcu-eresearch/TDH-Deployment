@@ -13,4 +13,4 @@ compile: clean
 	mvn -f deployment/pom.xml compile
 
 deploy:
-	deployment/bin/deploy.sh
+	deployment/scripts/redbox-deploy.sh
