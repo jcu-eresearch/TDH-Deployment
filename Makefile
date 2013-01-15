@@ -12,5 +12,5 @@ install: clean
 compile: clean
 	mvn -f deployment/pom.xml compile
 
-deploy:
+deploy: install
 	deployment/scripts/redbox-deploy.sh $(shell cd TDH-Research-Data-Catalogue.git; pwd)

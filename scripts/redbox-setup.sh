@@ -1,28 +1,22 @@
-
-if [ ! -z $REDBOX_DEPLOY_SETUP_DONE ]
+if [ -z  $INSTITUTIONAL_BUILD_DIR  ]
 then
-    return 1
+     echo "INSTITUTIONAL_BUILD_DIR environment variable not set..."
+     exit 1
+else
+
+   if [ -e  $INSTITUTIONAL_BUILD_DIR/.project-home ]
+   then
+        PROJECT_DIR=`cat $INSTITUTIONAL_BUILD_DIR/.project-home`
+   else
+        pushd $INSTITUTIONAL_BUILD_DIR
+        mvn clean
+        popd
+       if [ -e  $INSTITUTIONAL_BUILD_DIR/.project-home ]
+       then
+            PROJECT_DIR=`cat $INSTITUTIONAL_BUILD_DIR/.project-home`
+       else
+            echo "Could not determine the project.home directory"
+            exit 1
+       fi
+   fi
 fi
-
-SETTINGS_DIR=~/.tdh-deploy-settings
-SETTINGS_NAME=redbox-settings.sh
-SETTINGS=$SETTINGS_DIR/$SETTINGS_NAME
-
-if [ ! -e "$SETTINGS" ]
-then
-    echo "Creating ReDBoX Deployment Settings..."
-    mkdir -p $SETTINGS_DIR
-    echo cp $SCRIPT_DIR/$SETTINGS_NAME $SETTINGS
-    cp $SCRIPT_DIR/$SETTINGS_NAME $SETTINGS
-fi
-
-echo "Settings File: $SETTINGS"
-source $SETTINGS
-echo "Project Directory: $PROJECT_HOME"
-
-if [ -z $PROJECT_HOME ]
-then
-    echo "PROJECT_HOME variable not set"
-    exit 2
-fi
-export REDBOX_DEPLOY_SETUP_DONE=1
