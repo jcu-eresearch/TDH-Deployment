@@ -4,7 +4,7 @@ SETTINGS_DIR="~/.tdh-deploy-settings"
 SETTINGS_NAME=redbox-settings.sh
 SETTINGS=$SETTINGS_DIR/$SETTINGS_NAME
 
-SCRIPT_DIR=`$(cd  $(dirname $0) ; pwd -P)`
+SCRIPT_DIR=$(cd  $(dirname $0) ; pwd -P)
 
 if [ -e "$SETTINGS" ]
 then
