@@ -11,7 +11,7 @@
 
 
   <project name="ozej8y/mint.git" path="jcu-mint"/>
-  <project name="jcu-eresearch/TDH-Research-Data-Catalogue.git" path="TDH-Research-Data-Catalogue.git"/>
+  <project name="jcu-eresearch/TDH-Name-Authority.git" path="TDH-Name-Authority.git"/>
 
   <project name="jcu-eresearch/TDH-Deployment.git" path="deployment" remote="jcu-redbox" revision="mint-deployment">
   	<copyfile src="Makefile" dest="Makefile" />
