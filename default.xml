@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="jcu-redbox" 
+     fetch="https://github.com/"
+     />
+  <default revision="master"
+     remote="jcu-redbox"
+     sync-j="1" />
+
+
+
+  <project name="ozej8y/mint.git" path="jcu-mint"/>
+  <project name="jcu-eresearch/TDH-Research-Data-Catalogue.git" path="TDH-Research-Data-Catalogue.git"/>
+
+  <project name="jcu-eresearch/TDH-Deployment.git" path="deployment" remote="jcu-redbox" revision="mint-deployment">
+  	<copyfile src="Makefile" dest="Makefile" />
+  </project>
+
+</manifest>
+
+
