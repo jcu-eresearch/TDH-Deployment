@@ -11,6 +11,7 @@ To install the repo tool:
 
 	#> mkdir ~/bin
 	#> wget https://dl-ssl.google.com/dl/googlesource/git-repo/repo -O ~/bin/repo
+	#> chmod +x ~/bin/repo
 
 Ensure that ~/bin is in the PATH variable.
 
