@@ -6,7 +6,9 @@ clean:
 	mvn -f deployment/pom.xml clean
 
 dclean:
-	mvn -f TDH-Research-Data-Catalogue.git/pom.xml clean
+	pushd TDH-Research-Data-Catalogue.git;\
+	mvn clean;\
+	popd
 
 install: clean
 	mvn -f deployment/pom.xml install
