@@ -2,7 +2,7 @@
 
 SCRIPT_DIR=$(cd  $(dirname $0) ; pwd -P)
 export INSTITUTIONAL_BUILD_DIR=$1
-source $SCRIPT_DIR/redbox-setup.sh
+source $SCRIPT_DIR/mint-setup.sh
 
 echo "Instutional Build Directory: $INSTITUTIONAL_BUILD_DIR"
 
