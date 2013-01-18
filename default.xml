@@ -10,7 +10,7 @@
 
 
 
-  <project name="ozej8y/mint.git" path="jcu-mint"/>
+  <project name="ozej8y/mint.git" path="jcu-mint.git"/>
   <project name="jcu-eresearch/TDH-Name-Authority.git" path="TDH-Name-Authority.git"/>
 
   <project name="jcu-eresearch/TDH-Deployment.git" path="deployment" remote="jcu-redbox" revision="mint-deployment">
