@@ -4,6 +4,8 @@ SCRIPT_DIR=$(cd  $(dirname $0) ; pwd -P)
 export INSTITUTIONAL_BUILD_DIR=$1
 source $SCRIPT_DIR/mint-setup.sh
 
+test_for_root "You are deploying as root. Do you want to continue (Y/N)?"
+
 echo "Instutional Build Directory: $INSTITUTIONAL_BUILD_DIR"
 
 $SCRIPT_DIR/mint-shutdown.sh && $SCRIPT_DIR/mint-clean.sh
@@ -15,7 +17,10 @@ then
     popd
 else
     echo "An Error occoured..."
+    exit 1
 fi
+
+
 
 
 

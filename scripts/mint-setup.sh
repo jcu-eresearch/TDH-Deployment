@@ -20,3 +20,21 @@ else
        fi
    fi
 fi
+
+function test_for_root
+{
+    if [ $UID == 0 ]
+    then
+        echo $1
+        read DO_IT
+        if [ ! -z $DO_IT ]
+        then
+            if [ $DO_IT -eq "Yes" ] || [ $DO_IT -eq "Y" ] || [ $DO_IT -eq "y" ] || [ $DO_IT -eq "yes" ]
+            then
+                echo "running as root..."
+            else
+                exit 1
+            fi
+        fi
+    fi
+}
