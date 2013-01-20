@@ -20,7 +20,15 @@ else
     exit 1
 fi
 
-
+if [ ! -z $RUN_AS_ROOT ]
+then
+    echo "Not setting user..."
+else
+    for i in $PROJECT_DIR/system/*/mint;
+    do
+        sed -i "s/USER=\"\"/USER=\"$USER\"/g"
+    done
+fi
 
 
 
