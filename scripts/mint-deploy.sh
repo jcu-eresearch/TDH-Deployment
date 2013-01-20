@@ -26,8 +26,14 @@ then
 else
     for i in $PROJECT_DIR/system/*/mint;
     do
-        sed -i "s/USER=\"\"/USER=\"$USER\"/g"
+        echo "Updating \$USER in " $i
+        sed -i "s/USER=\"\"/USER=\"$USER\"/g" $i
     done
+fi
+
+if [ $? -eq 0 ]
+then
+    $SCRIPT_DIR/mint-startup.sh && $SCRIPT_DIR/mint-populate.sh
 fi
 
 
