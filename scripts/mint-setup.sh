@@ -29,7 +29,7 @@ function test_for_root
         read DO_IT
         if [ ! -z $DO_IT ]
         then
-            if [ $DO_IT -eq "Yes" ] || [ $DO_IT -eq "Y" ] || [ $DO_IT -eq "y" ] || [ $DO_IT -eq "yes" ]
+            if [ $DO_IT == "Yes" ] || [ $DO_IT == "Y" ] || [ $DO_IT == "y" ] || [ $DO_IT == "yes" ]
             then
                 echo "running as root..."
             else
