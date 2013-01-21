@@ -27,7 +27,7 @@ then
             source ~/.geonames
             if [ ! -e $ALL_COUNTRIES ]
             then
-                wget http://download.geonames.org/export/dump/allCountries.zip -o $ALL_COUNTRIES
+                wget http://download.geonames.org/export/dump/allCountries.zip -O $ALL_COUNTRIES
             fi
             if [ -e $ALL_COUNTRIES ]
             then
