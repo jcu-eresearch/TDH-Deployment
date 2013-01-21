@@ -31,7 +31,12 @@ then
             fi
             if [ -e $ALL_COUNTRIES ]
             then
-                echo "Yeah!"
+                echo "Downloaded allCountries.zip"
+                pushd $PROJECT_DIR/server
+                unzip $ALL_COUNTRIES
+                ./geo_harvest.sh allCountries.txt
+                rm allCountries.txt
+                popd
             else
                 echo "An error ocoured whilst trying to ingest all countries data...."
                 exit 5
