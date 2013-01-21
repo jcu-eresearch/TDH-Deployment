@@ -12,7 +12,7 @@ then
     if [ $? -eq 0 ]
     then
         source $PROJECT_DIR/system/redhat/mint
-        while [ -z `netstat -tpln | grep ${LOCAL_PORT} | cut -f 1 -d " "` ]; do echo -n "."; sleep 1; done
+        while [ -z `netstat -tln | grep ${LOCAL_PORT} | cut -f 1 -d " "` ]; do echo -n "."; sleep 1; done
         ${PROJECT_DIR}/server/initserver.sh ${MINT_HOSTNAME} ${LOCAL_PORT} ${MINT_CONTEXT} &> /dev/null &
     else
         echo "Failed to start mint..."
