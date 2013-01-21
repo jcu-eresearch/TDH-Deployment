@@ -3,7 +3,7 @@
 SCRIPT_DIR=$(cd  $(dirname $0) ; pwd -P)
 source $SCRIPT_DIR/mint-setup.sh
 
-if [ ! -z  $PROJECT_HOME  ]
+if [ ! -z  $PROJECT_DIR  ]
 then
     echo "Stopping Mint..."
     cat $INSTITUTIONAL_BUILD_DIR/.project-home
@@ -18,4 +18,7 @@ then
         echo "Failed to start mint..."
         exit 3
     fi
+else
+    echo "The PROJECT_DIR variable is not set..."
+    exit 4
 fi
