@@ -24,6 +24,6 @@ else
     for i in $PROJECT_DIR/system/*/redbox
     do
         echo "Updating \$USER in " $i
-        sed -i "s/USER=\"\"/USER=\"$USER\"/g" $i
+        sed -i "s/USER=\"\"/USER=\"$USER\"\n/g" $i
     done
 fi
