@@ -7,4 +7,35 @@ if [ ! -z  $PROJECT_DIR  ]
 then
     cat $INSTITUTIONAL_BUILD_DIR/.project-home
     $PROJECT_DIR/server/jcu_init_harvest.sh
+    if [ $? -eq 0 ]
+    then
+        if [ ! -e ~/.geonames ]
+        then
+
+            echo -n "Enter location of allCountries.zip file [~/allCountries.zip]: "
+            read LOC
+            if [ -x $LOC ]
+            then
+                ALL_COUNTRIES=~/allCountries.zip
+            else
+                ALL_COUNTRIES=$LOC
+            fi
+            echo "ALL_COUNTRIES=$ALL_COUNTRIES" >> ~/.geonames
+        fi
+        if [ -e ~/.geonames ]
+        then
+            source ~/.geonames
+            if [ ! -e $ALL_COUNTRIES ]
+            then
+                wget http://download.geonames.org/export/dump/allCountries.zip -o $ALL_COUNTRIES
+            fi
+            if [ -e $ALL_COUNTRIES ]
+            then
+                echo "Yeah!"
+            else
+                echo "An error ocoured whilst trying to ingest all countries data...."
+                exit 5
+            fi
+        fi
+    fi
 fi
