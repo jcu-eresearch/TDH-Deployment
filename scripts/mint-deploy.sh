@@ -24,7 +24,7 @@ if [ ! -z $RUN_AS_ROOT ]
 then
     echo "Not setting user..."
 else
-    for i in $PROJECT_DIR/system/*/mint;
+    for i in $PROJECT_DIR/system/*/mint
     do
         echo "Updating \$USER in " $i
         sed -i "s/USER=\"\"/USER=\"$USER\"/g" $i
