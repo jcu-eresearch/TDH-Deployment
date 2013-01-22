@@ -4,7 +4,7 @@ INSTUTIONAL_BUILD_DIR=$(shell cd TDH-Research-Data-Catalogue.git; pwd)
 
 all: install
 
-clean:
+clean: clean-rifcs
 	mvn -f deployment/pom.xml clean
 
 dclean:
@@ -14,6 +14,9 @@ dclean:
 
 clean-state:
 	rm ~/.geonames ~/.rifpython
+
+clean-rifcs:
+	rm -Rf rifcs
 
 install: clean
 	mvn -f deployment/pom.xml install

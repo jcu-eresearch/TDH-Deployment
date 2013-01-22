@@ -44,6 +44,6 @@ if [ ! -e jcu-rifcs.rif ]
 then
     wget -O jcu-rifcs.rif  https://eresearch.jcu.edu.au/tdh/data/@@rifcs?days_in_past=all
 fi
-$RIF_PYTHON ../TDH-Research-Data-Catalogue.git/src/main/python/bin/rifsplit.py jcu-rifcs.rif
-$RIF_PYTHON ../TDH-Research-Data-Catalogue.git/src/main/python/bin/process_rif_cs.py -o processed output/collection*.rif
+$RIF_PYTHON $INSTITUTIONAL_BUILD_DIR/src/main/python/bin/rifsplit.py jcu-rifcs.rif
+$RIF_PYTHON $INSTITUTIONAL_BUILD_DIR/src/main/python/bin/process_rif_cs.py -o processed output/collection*.rif
 popd
