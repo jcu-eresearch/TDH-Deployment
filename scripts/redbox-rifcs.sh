@@ -29,7 +29,7 @@ fi
 $RIF_PYTHON -c "import lxml, requests, argparse"
 LIBS_INSTALLED=$?
 
-if [ $LIBS_INSTALLED -neq 0 ]
+if [ $LIBS_INSTALLED ! -eq 0 ]
 then
     echo "ERROR: The python executable $RIF_PYTHON does not have access to the required modules: lxml, requests, argparse."
     echo "exiting..."
