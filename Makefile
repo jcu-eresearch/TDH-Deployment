@@ -22,4 +22,4 @@ deploy: install dclean
 	deployment/scripts/redbox-deploy.sh $(INSTUTIONAL_BUILD_DIR)
 
 get-rifcs:
-    deployment/scripts/redbox-rifcs.sh $(INSTUTIONAL_BUILD_DIR)
+	deployment/scripts/redbox-rifcs.sh $(INSTUTIONAL_BUILD_DIR)
