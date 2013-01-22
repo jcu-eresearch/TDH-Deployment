@@ -12,6 +12,9 @@ dclean:
 	mvn clean;\
 	popd
 
+clean-state:
+	rm ~/.geonames ~/.rifpython
+
 install: clean
 	mvn -f deployment/pom.xml install
 
