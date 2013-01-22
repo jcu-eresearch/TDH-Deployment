@@ -1,5 +1,7 @@
 SHELL:=/bin/bash
 
+INSTUTIONAL_BUILD_DIR=$(shell cd TDH-Research-Data-Catalogue.git; pwd)
+
 all: install
 
 clean:
@@ -17,4 +19,7 @@ compile: clean
 	mvn -f deployment/pom.xml compile
 
 deploy: install dclean
-	deployment/scripts/redbox-deploy.sh $(shell cd TDH-Research-Data-Catalogue.git; pwd)
+	deployment/scripts/redbox-deploy.sh $(INSTUTIONAL_BUILD_DIR)
+
+get-rifcs:
+    deployment/scripts/redbox-rifcs.sh $(INSTUTIONAL_BUILD_DIR)
