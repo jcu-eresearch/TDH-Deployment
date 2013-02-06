@@ -15,6 +15,7 @@ then
     popd
 else
     echo "An Error occoured..."
+    exit 5
 fi
 
 if [ ! -z $RUN_AS_ROOT ]
