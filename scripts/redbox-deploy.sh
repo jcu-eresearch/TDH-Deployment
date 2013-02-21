@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 SCRIPT_DIR=$(cd  $(dirname $0) ; pwd -P)
 export INSTITUTIONAL_BUILD_DIR=$1
