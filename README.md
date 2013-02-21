@@ -24,7 +24,7 @@ using `redbox-1.5.2.2`:
 	#> cd redbox
 	#> repo init -u https://github.com/jcu-eresearch/TDH-Deployment.git -b redbox-1.5.2.2
 	#> repo sync
-	#> make
+	#> make deploy
 
 Mint
 ====
@@ -35,7 +35,7 @@ using `mint-1.5.2.2`:
 	#> cd mint
 	#> repo init -u https://github.com/jcu-eresearch/TDH-Deployment.git -b mint-1.5.2.2
 	#> repo sync
-	#> make
+	#> make deploy
 
 
 
