@@ -17,7 +17,6 @@ Ensure that ~/bin is in the PATH variable.
 
 ReDBoX
 ====
-[See also](https://github.com/jcu-eresearch/TDH-Research-Data-Catalogue/blob/master/README.md)
 Find the branch for the version you wish to deploy. In this example we will be 
 using `redbox-1.5.2.2` ([See also](https://github.com/jcu-eresearch/TDH-Research-Data-Catalogue/blob/master/README.md)):
 
@@ -30,7 +29,7 @@ using `redbox-1.5.2.2` ([See also](https://github.com/jcu-eresearch/TDH-Research
 Mint
 ====
 Find the branch for the version you wish to deploy. In this example we will be 
-using `mint-1.5.2.2`:
+using `mint-1.5.2.2` ([See also](https://github.com/jcu-eresearch/TDH-Name-Authority/blob/master/README.md)):
 
 	#> mkdir mint
 	#> cd mint
