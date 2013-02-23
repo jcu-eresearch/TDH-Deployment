@@ -15,7 +15,6 @@
 
   <project name="jcu-eresearch/fascinator-shibboleth.git" path="fascinator-shibboleth.git"/>
   <project name="jcu-eresearch/fascinator-harvester-directory-name.git" path="fascinator-harvester-directory-name.git"/>
-  <project name="nigelb/plugin-harvester-csv.git" path="plugin-harvester-csv.git" revision="plugin-harvester-csv-1.1.2"/>
   <project name="redbox-mint/javascript-widgets.git" path="jcu-redbox.git/config/src/main/config/portal/default/redbox/javascript-widgets" revision="9a6f0cae3c95edc86cb88fa479b80982003b5717"/>
 
   <project name="jcu-eresearch/TDH-Deployment.git" path="deployment" remote="jcu-redbox" revision="redbox-deployment">
