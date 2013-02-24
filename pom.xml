@@ -11,5 +11,6 @@
 
     <modules>
         <module>../jcu-mint.git</module>
+        <module>../plugin-harvester-csv.git</module>
     </modules>
 </project>
