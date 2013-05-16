@@ -9,7 +9,7 @@
      sync-j="1" />
 
   <project name="ozej8y/redbox.git" path="jcu-redbox.git"/>
-  <project name="jcu-eresearch/TDH-Research-Data-Catalogue.git" path="TDH-Research-Data-Catalogue.git" revision="1.6"/>
+  <project name="jcu-eresearch/TDH-Research-Data-Catalogue.git" path="TDH-Research-Data-Catalogue.git" revision="1.6-upgrade"/>
 
   <project name="jcu-eresearch/fascinator-shibboleth.git" path="fascinator-shibboleth.git"/>
   <project name="jcu-eresearch/fascinator-harvester-directory-name.git" path="fascinator-harvester-directory-name.git"/>
