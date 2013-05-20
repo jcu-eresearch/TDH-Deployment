@@ -11,7 +11,7 @@
 
 
   <project name="ozej8y/redbox.git" path="jcu-redbox.git"/>
-  <project name="jcu-eresearch/TDH-Research-Data-Catalogue.git" path="TDH-Research-Data-Catalogue.git" revision="90fc004638921f95763ae930338ce18832bb61b8"/>
+  <project name="jcu-eresearch/TDH-Research-Data-Catalogue.git" path="TDH-Research-Data-Catalogue.git" revision="990aea1f218247c12ccbb12466fce8afaab3bf2c"/>
 
   <project name="jcu-eresearch/fascinator-shibboleth.git" path="fascinator-shibboleth.git"/>
   <project name="jcu-eresearch/fascinator-harvester-directory-name.git" path="fascinator-harvester-directory-name.git"/>
