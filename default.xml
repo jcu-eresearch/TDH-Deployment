@@ -9,7 +9,7 @@
      sync-j="1" />
 
   <project name="ozej8y/mint.git" path="jcu-mint.git"/>
-  <project name="jcu-eresearch/TDH-Name-Authority.git" path="TDH-Name-Authority.git" revision="1.6-upgrade"/>
+  <project name="jcu-eresearch/TDH-Name-Authority.git" path="TDH-Name-Authority.git" revision="1.6.1-upgrade"/>
   <project name="nigelb/plugin-harvester-csv.git" path="plugin-harvester-csv.git" revision="plugin-harvester-csv-1.1.2"/>
 
   <project name="jcu-eresearch/TDH-Deployment.git" path="deployment" remote="jcu-redbox" revision="mint-deployment">
