@@ -10,7 +10,7 @@
 
 
 
-  <project name="ozej8y/redbox.git" path="jcu-redbox.git"/>
+  <project name="ozej8y/redbox.git" path="jcu-redbox.git" revision="a23fe713fee40e98600f254df01472e21987f18b" />
   <project name="jcu-eresearch/TDH-Research-Data-Catalogue.git" path="TDH-Research-Data-Catalogue.git" revision="990aea1f218247c12ccbb12466fce8afaab3bf2c"/>
 
   <project name="jcu-eresearch/fascinator-shibboleth.git" path="fascinator-shibboleth.git"/>
