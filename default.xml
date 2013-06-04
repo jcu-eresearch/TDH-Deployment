@@ -10,7 +10,7 @@
 
 
 
-  <project name="ozej8y/mint.git" path="jcu-mint.git"/>
+  <project name="ozej8y/mint.git" path="jcu-mint.git" revision="3b600c8d2e33bcb3c979457b7cd1317bd53ec3fe" />
   <project name="jcu-eresearch/TDH-Name-Authority.git" path="TDH-Name-Authority.git" revision="90fc004638921f95763ae930338ce18832bb61b8"/>
   <project name="nigelb/plugin-harvester-csv.git" path="plugin-harvester-csv.git" revision="plugin-harvester-csv-1.1.2"/>
 
