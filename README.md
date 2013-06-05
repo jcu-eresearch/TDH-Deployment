@@ -38,4 +38,7 @@ using `mint-1.5.2.2` ([See also](https://github.com/jcu-eresearch/TDH-Name-Autho
 	#> make deploy
 
 
+Credits
+=======
 
+This project is supported by the [Australian National Data Service (ANDS)](http://www.ands.org.au) through the National Collaborative Research Infrastructure Strategy Program and the Education Investment Fund (EIF) Super Science Initiative, as well as through the [Queensland Cyber Infrastructure Foundation (QCIF)](http://www.qcif.edu.au).
