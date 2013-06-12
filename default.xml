@@ -8,13 +8,10 @@
      remote="jcu-redbox"
      sync-j="1" />
 
-
-
   <project name="ozej8y/redbox.git" path="jcu-redbox.git" revision="a23fe713fee40e98600f254df01472e21987f18b" />
   <project name="jcu-eresearch/TDH-Research-Data-Catalogue.git" path="TDH-Research-Data-Catalogue.git" revision="990aea1f218247c12ccbb12466fce8afaab3bf2c"/>
-
   <project name="jcu-eresearch/fascinator-shibboleth.git" path="fascinator-shibboleth.git" revision="91076963c3bc20736372d8541eba66ba5a47d801" />
-  <project name="jcu-eresearch/fascinator-harvester-directory-name.git" path="fascinator-harvester-directory-name.git"/>
+  <project name="jcu-eresearch/fascinator-harvester-directory-name.git" path="fascinator-harvester-directory-name.git" revision="3f55cf252d99a1d1ec812d1967576551d4af2946" />
   <project name="redbox-mint/javascript-widgets.git" path="jcu-redbox.git/config/src/main/config/portal/default/redbox/javascript-widgets" revision="9a6f0cae3c95edc86cb88fa479b80982003b5717"/>
 
   <project name="jcu-eresearch/TDH-Deployment.git" path="deployment" remote="jcu-redbox" revision="redbox-deployment">
