@@ -8,7 +8,7 @@
      remote="jcu-redbox"
      sync-j="1" />
 
-  <project name="ozej8y/redbox.git" path="jcu-redbox.git" revision="0742e41b7a59ea5efdf62fbe9539770604ab1c39" />
+  <project name="ozej8y/redbox.git" path="jcu-redbox.git" revision="1.7-upgrade" />
   <project name="jcu-eresearch/TDH-Research-Data-Catalogue.git" path="TDH-Research-Data-Catalogue.git" revision="1.7"/>
   <project name="jcu-eresearch/fascinator-shibboleth.git" path="fascinator-shibboleth.git"/>
   <project name="jcu-eresearch/fascinator-harvester-directory-name.git" path="fascinator-harvester-directory-name.git"/>
