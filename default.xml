@@ -8,11 +8,10 @@
      remote="jcu-redbox"
      sync-j="1" />
 
-  <project name="ozej8y/redbox.git" path="jcu-redbox.git" revision="1.7-upgrade" />
+  <project name="ozej8y/redbox.git" path="jcu-redbox.git" revision="5cfe1cdf6005cb0970f036189a16646a0365f8b7" />
   <project name="jcu-eresearch/TDH-Research-Data-Catalogue.git" path="TDH-Research-Data-Catalogue.git" revision="1.7"/>
-  <!--  no longer required - shibboleth code has now been replaced with a version directly from redbox dev team.-->
-  <!--  <project name="jcu-eresearch/fascinator-shibboleth.git" path="fascinator-shibboleth.git" revision="1.7-upgrade"/>  --> 
-  <project name="jcu-eresearch/fascinator-harvester-directory-name.git" path="fascinator-harvester-directory-name.git" revision="1.7-upgrade"/>
+  <!-- fascinator-shibboleth is  no longer required - code has now been replaced with a version directly from redbox dev team.-->
+  <project name="jcu-eresearch/fascinator-harvester-directory-name.git" path="fascinator-harvester-directory-name.git" revision="4d836252020c05f5d8a69971a70e5bd227c90bdd"/>
   <project name="redbox-mint/javascript-widgets.git" path="jcu-redbox.git/config/src/main/config/portal/default/redbox/javascript-widgets" revision="9a6f0cae3c95edc86cb88fa479b80982003b5717"/>
 
   <project name="jcu-eresearch/TDH-Deployment.git" path="deployment" remote="jcu-redbox" revision="redbox-deployment">
