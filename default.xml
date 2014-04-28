@@ -8,7 +8,7 @@
      remote="jcu-redbox"
      sync-j="1" />
 
-  <project name="ozej8y/mint.git" path="jcu-mint.git" revision="1.7-upgrade" />
+  <project name="ozej8y/mint.git" path="jcu-mint.git" revision="63e4720203efc8a941941c6c8ebbef723fc80ae1" />
   <project name="jcu-eresearch/TDH-Name-Authority.git" path="TDH-Name-Authority.git" revision="1.7" />
   <project name="nigelb/plugin-harvester-csv.git" path="plugin-harvester-csv.git" revision="plugin-harvester-csv-1.1.2"/>
 
