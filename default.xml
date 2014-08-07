@@ -8,7 +8,8 @@
      remote="jcu-redbox"
      sync-j="1" />
 
-  <project name="ozej8y/mint.git" path="jcu-mint.git" revision="b50279fc88be4071137b88d626d06a327228d1de" />
+<!-- Using curation from Mint 1.6.1 - changes in 1.7 prevent curation from working properly -->
+  <project name="ozej8y/mint.git" path="jcu-mint.git" revision="81d648abe2519b400313e8a501f59df6195d1671" />
   <project name="jcu-eresearch/TDH-Name-Authority.git" path="TDH-Name-Authority.git" />
   <project name="nigelb/plugin-harvester-csv.git" path="plugin-harvester-csv.git" revision="plugin-harvester-csv-1.1.2"/>
 
