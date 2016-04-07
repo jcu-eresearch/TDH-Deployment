@@ -5,7 +5,7 @@
     <default revision="master" remote="jcu-redbox" sync-j="1"/>
 
     <project name="ozej8y/redbox.git" path="jcu-redbox.git" revision="5cfe1cdf6005cb0970f036189a16646a0365f8b7"/>
-    <project name="jcu-eresearch/TDH-Research-Data-Catalogue.git" path="TDH-Research-Data-Catalogue.git"/>
+    <project name="jcu-eresearch/TDH-Research-Data-Catalogue.git" path="TDH-Research-Data-Catalogue.git" revision="redbox-1.8-upgrade"/>
     <project name="jcu-eresearch/fascinator-harvester-directory-name.git" path="fascinator-harvester-directory-name.git"
              revision="4d836252020c05f5d8a69971a70e5bd227c90bdd"/>
     <!--<project name="redbox-mint/javascript-widgets.git" path="jcu-redbox.git/config/src/main/config/portal/default/redbox/javascript-widgets" revision="9a6f0cae3c95edc86cb88fa479b80982003b5717"/>-->
