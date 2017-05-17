@@ -7,8 +7,7 @@
     <!-- Using curation from Redbox 1.9 -->
     <project name="ozej8y/redbox.git" path="jcu-redbox.git" revision="jcu-1.9"/>
     <project name="jcu-eresearch/TDH-Research-Data-Catalogue.git" path="TDH-Research-Data-Catalogue.git" revision="jcu-1.9" />
-    <project name="jcu-eresearch/fascinator-harvester-directory-name.git" path="fascinator-harvester-directory-name.git"
-             revision="4d836252020c05f5d8a69971a70e5bd227c90bdd"/>
+    <project name="jcu-eresearch/fascinator-harvester-directory-name.git" path="fascinator-harvester-directory-name.git" revision="jcu-1.9"/>
 
     <project name="jcu-eresearch/TDH-Deployment.git" path="deployment" remote="jcu-redbox" revision="redbox-deployment">
         <copyfile src="Makefile" dest="Makefile"/>
